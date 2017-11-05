@@ -25,13 +25,13 @@ class Level
 	{
 		switch (level) {
 		case 1:
-			System.out.println("Chosen level easy.");
+			System.out.println("Difficulty level set to easy.");
 			break;
 		case 2:
-			System.out.println("Chosen level medium.");
+			System.out.println("Difficulty level set to medium.");
 			break;
 		case 3:
-			System.out.println("Chosen level advance.");
+			System.out.println("Difficulty level set to advance.");
 			break;
 		default:
 			System.out.println("");
@@ -47,31 +47,31 @@ class Lifes
 	{
 		switch (life) {
 		case 1:
-			System.out.println("Chosen one life :D.");
+			System.out.println("You have one life :D.");
 			break;
 		case 2:
-			System.out.println("Chosen two lifes :p.");
+			System.out.println("You have two lives :p.");
 			break;
 		case 3:
-			System.out.println("Chosen three lifes :).");
+			System.out.println("You have three lives:).");
 			break;
 		case 4:
-			System.out.println("Chosen four lifes.");
+			System.out.println("You have four lives.");
 			break;
 		case 5:
-			System.out.println("Chosen five lifes.");
+			System.out.println("You have five lives.");
 			break;
 		case 6:
-			System.out.println("Chosen six lifes.");
+			System.out.println("You have six lives.");
 			break;
 		case 7:
-			System.out.println("Chosen seven lifes.");
+			System.out.println("You have seven lives.");
 			break;
 		case 8:
-			System.out.println("Chosen eight lifes.");
+			System.out.println("You have eight lives.");
 			break;
 		case 9:
-			System.out.println("Chosen nein lifes.");
+			System.out.println("You have nine lives.");
 			break;
 
 		default:
