@@ -10,11 +10,19 @@ public static void main(String[] args) {
 		
 		for(;;)
 		{
-			System.out.println("Pleas choose level: Easy[1] Medium[2] Advance[3]");
+			System.out.println("Please choose level: Easy[1] Medium[2] Advance[3]");
 			int chosenLevel = Level.choose(chosenLevel = sc.nextInt());
 			
-			System.out.println("How many lifes?[1-9]: ");
-			int chosenLife =  Lifes.howMany(chosenLife = sc.nextInt()); 
+			System.out.println("How many lives?[1-9]: ");
+			int chosenLife =  Lives.howMany(chosenLife = sc.nextInt()); 
+			
+			System.out.println("Welcome to the Game Hangman :D");
+			String password = "xxxxx";
+			System.out.println("Password to win: " +Game.password(chosenLevel, password ));
+			
+			System.out.println("Select the character: ");
+			char character = 'x';
+			char chosenCharacter = Character.characterGame(character);
 		}
 		
 	}
@@ -41,7 +49,7 @@ class Level
 	}
 }
 
-class Lifes
+class Lives
 {
 	static int howMany(int life)
 	{
@@ -79,4 +87,36 @@ class Lifes
 		}
 		return life;
 	}
+}
+
+class Game
+{
+	//public static String password;
+
+	static String password(int level,String password) {
+		if(level==1)
+		{
+			password = "Dog";
+		}
+		else if(level==2)
+		{
+			password = "Cat and Dog";
+		}
+		else if(level==3)
+		{
+			password = "The best game of the year";
+		}
+		return password;
+	}
+	
+}
+class Character 
+{
+	static char characterGame(char character)
+	{
+		Scanner sc = new Scanner(System.in);
+		character  = sc.next().charAt(0);
+		System.out.println(character );
+		return character ;
+	}	
 }
